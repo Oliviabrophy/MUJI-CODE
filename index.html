@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firebase with p5.js</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="ddu.ico" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.min.js" crossorigin="anonymous"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-firestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.min.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.3/firebase-analytics.js"></script>
+    <script src="./firebase.js"></script>    
+    <script src="./sketch.js"></script>
+    </head>
+<body>
+    <div id="frontpage" class="page">
+        <div class="header">
+            <img src="./assets/muji-logo.svg" alt="">
+        </div>
+        <div class="main">
+            <div class="text">
+                <div>
+                <p>INDRET FREMTIDEN</p>
+                <h1>Tag din <br>personlige <br>quiz <span id="start">her!</span></h1>
+                </div>
+            </div>
+            <div class="helper">
+                <img src="assets/forside copy.png" alt="">
+            </div>
+            <div class="rightfront">
+                <img src="assets/forside.png 22-10-56-519.png" alt="">
+            </div>
+        </div>
+        <div class="footer"></div>
+    </div>
+    
+    
+    <div id="velkommen" class="page">
+        <div class="header">
+            <h2>Hej <span id='yourname'></span> - er du i shoppehumør?</h2>
+        </div>
+        <div class="main">
+            <div id="shop-2"><h3>Nej, måske en anden dag</h3></div>
+            <div img src="./assets/ansigt k.png" alt=""></div>
+            <div id="shop-1"><h3>Ja, virkelig</h3></div>
+        </div>
+        <div class="footer"></div>
+   </div>
+
+
+
+   <div id="organised" class="page">
+      <div class="header">
+            <h2>Er du et rodehoved?</h2>
+      </div>
+      <div class="main">
+        <div id="org1"><h4>Ja, meget!</h4></div>
+        <div id="org2"><h4>Jeg har <br> organiseret rod;)</h4></div>
+        <div id="org3"><h4>Nej, er meget <br> organiseret!</h4></div>
+      </div>
+      <div class="footer"></div>
+    </div>
+
+
+    <div id="room" class="page">
+        <div class="header">
+              <h2>Hvilket rum vil du give en organiseret makeover?</h2>
+        </div>
+        <div class="main">
+          <div id="room1"> <img src="assets/room1.png" alt=""> </div>
+          <div id="room2"> <img src="assets/room2.png" alt=""> </div>
+          <div id="room3"> <img src="assets/room3.png" alt=""> </div>   
+        </div>
+        <div class="footer"></div>
+    </div>
+
+
+    <div id="decorate" class="page"></div>
+</body>
+</html>

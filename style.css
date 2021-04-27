@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+body{
+    display:grid;
+    grid-auto-flow: column;
+    overflow:hidden;
+}
+/* .page er vores wireframe */
+.page{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-rows: 3fr 8fr 1fr;
+    transition:.3s ease-in-out   all;
+}
+
+
+
+/* ting som er fælles for alle headere */
+.header{
+    background-color:white;
+    border-bottom: 2px solid black;   
+    display:grid;
+    padding: 2rem;
+    background-image: url('./assets/texture\ white.jpg');
+    background-size: cover;
+}
+
+/* ting so er fælles for alle main */
+.main{
+    background-image: url('./assets/texture.png');
+    background-repeat: repeat-x;
+    background-size:cover;
+    display:grid;
+    border-bottom: 2px solid black;
+    max-height:calc(8/2*100%);
+}
+
+/* ting so er fælles for alle footers */
+.footer{
+    background-color: white;
+    display:grid;
+    align-items: center;
+    background-image: url('./assets/texture\ white.jpg');
+    background-size: cover;
+}
+
+p{
+    margin:0;
+    padding:0;
+    font-size: 3vh;
+    font-style: italic;
+}
+
+h1, h2, h3{
+    font-weight: bold;
+}
+h1{
+    font-size: 12vh;
+    
+}
+
+h2{
+    font-size: 6vh; 
+    opacity: 0.8;
+}
+
+h3{
+    font-size: 7vh; 
+    font-weight:normal;
+    opacity: 0.8;
+    text-align:center;
+}
+
+h4{
+    font-size: 6vh; 
+    font-weight:normal;
+    opacity: 0.8;
+    text-align:center;
+}
+
+.main img{
+    max-height: 100%;
+    width:100%;
+}
+
+#frontpage .header{
+    align-items:center;
+    justify-content:center;
+}
+
+
+#frontpage .header img{
+    max-width:100%;
+    height: 100%;
+}
+
+#frontpage .main{
+    grid-template-columns: 5fr 3fr 3fr;
+    padding: 6rem;
+    gap: 0rem;
+}
+
+#frontpage .text{
+    display:grid;
+    align-items:center;
+}
+
+#frontpage .rightfront img{
+    margin-left: -40px;
+}
+
+
+#start{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#frontpage.helper{
+    display:grid;
+}
+
+#velkommen .header{
+    place-items:center;
+}
+
+
+#velkommen .main{
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items:center;
+    padding: 0 5rem 0 5rem;
+
+}
+
+
+#organised .header{
+    place-items: center;
+}
+
+#organised .main{
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items:center;
+    padding: 0 5rem 0 5rem;
+}
+
+
+#room .header{
+    place-items: center;
+}
+
+#room .main{
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items:center;   
+    padding: 0 5rem 0 5rem; 
+    
+}
+
+#room .main #helper-abs{
+    position:absolute;
+    left:1rem;
+    bottom:0;
+    width:auto;
+    height:60vh;
+    padding-right: 3rem;
+    margin-left: -10rem;
+}
+
