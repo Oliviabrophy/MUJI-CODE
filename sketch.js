@@ -8,7 +8,7 @@ function setup() {
     pages = selectAll(".page")
     select("#start").mousePressed(()=>{
         //spørg om brugerens navn 
-       yourname = prompt('what is your name?')
+       //yourname = prompt('what is your name?')
         select('#yourname').html(yourname)
         goRight()
     })
@@ -20,6 +20,21 @@ function setup() {
     select("#room1").mousePressed(()=>goRight())
     select("#room2").mousePressed(()=>goRight())
     select("#room3").mousePressed(()=>goRight())
+    select("#vibe1").mousePressed(()=>goRight())
+    select("#vibe2").mousePressed(()=>goRight())
+    select("#vibe3").mousePressed(()=>goRight())
+    select("#slutside1").mousePressed(()=>{
+        select('#result').style('backgroundImage', 'url("./assets/mujionline.png")')
+        goRight()
+    })
+    select("#slutside2").mousePressed(()=>{
+        select('#result').style('backgroundImage', 'url("./assets/mujionline2.png")')
+        goRight()
+    })
+    select("#slutside3").mousePressed(()=>{
+        select('#result').style('backgroundImage', 'url("./assets/mujionline3.png")')
+        goRight()
+    })
 }
 
 

@@ -20,8 +20,6 @@ body{
     transition:.3s ease-in-out   all;
 }
 
-
-
 /* ting som er fælles for alle headere */
 .header{
     background-color:white;
@@ -42,6 +40,10 @@ body{
     max-height:calc(8/2*100%);
 }
 
+.main div{
+    cursor:pointer;
+}
+
 /* ting so er fælles for alle footers */
 .footer{
     background-color: white;
@@ -54,7 +56,7 @@ body{
 p{
     margin:0;
     padding:0;
-    font-size: 3vh;
+    font-size: 2.4vh;
     font-style: italic;
 }
 
@@ -132,11 +134,18 @@ h4{
 
 
 #velkommen .main{
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     place-items:center;
     padding: 0 5rem 0 5rem;
-
+    position:relative;
+    gap:8rem;
 }
+
+#velkommen .main  img{
+    width:20vw;
+    position:absolute;
+    bottom:0;
+} 
 
 
 #organised .header{
@@ -149,25 +158,49 @@ h4{
     padding: 0 5rem 0 5rem;
 }
 
+#organised .main div{
+    width:20vw;
+    height:20vw;
+    border-radius: 50%;
+    background:rgba(255,255,255,.4);
+    display:grid;
+    place-items:center;
+    box-shadow: 0 0 1rem 1rem rgba(0,0,0,.2);
+}
 
-#room .header{
+#room, #vibe, #slutside{
+    position:relative;
+}
+#room .header, #vibe .header, #slutside .header{
     place-items: center;
 }
 
-#room .main{
+#room .main, #vibe .main, #slutside .main{
     grid-template-columns: 1fr 1fr 1fr;
     place-items:center;   
-    padding: 0 5rem 0 5rem; 
+    padding: 0 12% 0 12%;
+}
+
+#room .main #helper-abs, #vibe .main #helper-abs, #slutside .main #helper-abs{
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:auto;
+    height:40vh;
+}
+#vibe .main #helper-abs{
+    left:auto;
+    right:0;
+}
+#slutside .main #helper-abs{
+    left:auto;
+    right:2rem;
+    bottom:4rem;
+}
+
+#result{
+    background-size:cover;
     
 }
 
-#room .main #helper-abs{
-    position:absolute;
-    left:1rem;
-    bottom:0;
-    width:auto;
-    height:60vh;
-    padding-right: 3rem;
-    margin-left: -10rem;
-}
 
