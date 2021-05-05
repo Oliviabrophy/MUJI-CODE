@@ -81,7 +81,7 @@ h3{
 }
 
 h4{
-    font-size: 6vh; 
+    font-size: 4vh; 
     font-weight:normal;
     opacity: 0.8;
     text-align:center;
@@ -159,8 +159,9 @@ h4{
 }
 
 #organised .main div{
-    width:20vw;
-    height:20vw;
+    width:24vw;
+    height:24vw;
+    padding:1rem;
     border-radius: 50%;
     background:rgba(255,255,255,.4);
     display:grid;
@@ -194,7 +195,8 @@ h4{
 }
 #slutside .main #helper-abs{
     left:auto;
-    right:2rem;
+    height:60%;
+    right:0;
     bottom:4rem;
 }
 
