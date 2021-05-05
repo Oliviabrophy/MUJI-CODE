@@ -28,11 +28,11 @@ function setup() {
         goRight()
     })
     select("#slut2").mousePressed(()=>{
-        select('#result').style('backgroundImage', 'url("./assets/mujionline2.png")')
+        select('#result').style('backgroundImage', 'url("./assets/slutsidewireframe.png")')
         goRight()
     })
     select("#slut3").mousePressed(()=>{
-        select('#result').style('backgroundImage', 'url("./assets/mujionline3.png")')
+        select('#result').style('backgroundImage', 'url("./assets/slutsidewireframe.png")')
         goRight()
     })
 }
