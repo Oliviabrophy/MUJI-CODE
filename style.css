@@ -17,7 +17,7 @@ body{
     height:100vh;
     display:grid;
     grid-template-rows: 3fr 8fr 1fr;
-    transition:.3s ease-in-out   all;
+    /* transition:.3s ease-in-out   all; */
 }
 
 /* ting som er fælles for alle headere */
