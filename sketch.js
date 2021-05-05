@@ -23,15 +23,15 @@ function setup() {
     select("#vibe1").mousePressed(()=>goRight())
     select("#vibe2").mousePressed(()=>goRight())
     select("#vibe3").mousePressed(()=>goRight())
-    select("#slutside1").mousePressed(()=>{
-        select('#result').style('backgroundImage', 'url("./assets/mujionline.png")')
+    select("#slut1").mousePressed(()=>{
+        select('#result').style('backgroundImage', 'url(./assets/RESULTAT.png)')
         goRight()
     })
-    select("#slutside2").mousePressed(()=>{
+    select("#slut2").mousePressed(()=>{
         select('#result').style('backgroundImage', 'url("./assets/mujionline2.png")')
         goRight()
     })
-    select("#slutside3").mousePressed(()=>{
+    select("#slut3").mousePressed(()=>{
         select('#result').style('backgroundImage', 'url("./assets/mujionline3.png")')
         goRight()
     })
