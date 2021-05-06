@@ -8,7 +8,7 @@ function setup() {
     pages = selectAll(".page")
     select("#start").mousePressed(()=>{
         //spørg om brugerens navn 
-       //yourname = prompt('what is your name?')
+       yourname = prompt('what is your name?')
         select('#yourname').html(yourname)
         goRight()
     })
